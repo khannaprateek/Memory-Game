@@ -1,0 +1,98 @@
+body{
+    background-color: lightskyblue;
+}
+button{
+    height:60px;
+    width:170px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 30px;
+}
+h1{
+    color: green;
+    text-align: center;
+    font-weight: bold;
+}
+#startButton{
+    margin: 200px 0px 0px 650px;
+    background-color: green;
+    height:150px;
+    width:150px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 75px;
+    
+}
+#endButton{
+    background-color: red;
+    margin: 0px 0px 0px 480px;
+    float: left;
+}
+body{
+    height: 100%;
+    overflow: hidden;
+}
+#gameBoard{
+    background-color:blanchedalmond;
+    height:550px;
+    width:550px;
+    padding:10px;
+    margin: 20px 425px 35px;
+}
+
+#timer{
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    color:royalblue;
+    font-size: 50px;
+    margin: auto;
+}
+
+.scene {
+  width: 100px;
+  height: 100px;
+  margin: 10px 0;
+  perspective: 110px;
+  float: left;
+  margin:15px;  
+  
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: absolute;
+  
+}
+
+.card.is-flipped {
+  transform: rotateX(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background: lightskyblue;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card__face--back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+}
